@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find first 5 prime numbers using for loop
+        // let num = prompt("enter number of prime numbers to be displayed");
+        // let div = 0;
+        // let x=1;
+        // for (let i = 2; x<num; i++) {
+        //     for (let j =2; j<=i; j++){
+        //         if (i%j==0){
+        //             div++;
+        //         }
+        //     }
+        //     if (div==1){
+        //         document.write(i);
+        //         x++;
+        //     }
+            
+        // }
+       
+        let count = 0;
+        let j;
+
+        const checkPrime = (num) => {
+            for (let i = 1; i <= num; i++) {
+               for ( j = 2; j <= i; j++) {
+                   if (i%j===0) {
+                       break;
+                   }
+               }
+               if(j===i){
+                   console.log(j);
+               }
+               
+            }
+        }
+        
+        checkPrime(11);
+
+    </script>
+</body>
+</html>
