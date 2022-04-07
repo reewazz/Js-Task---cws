@@ -9,6 +9,17 @@
 <body>
     <script>
         // find the reverse of given number using for loop
+        let rev = 0;
+      let num = prompt('enter a multi digit number');
+      let lastDigit;
+
+      while (num != 0) {
+        lastDigit = num % 10;   // 345 % 10 = 5  , 34 %10 = 4, 3%10 = 3
+        rev = rev * 10 + lastDigit;   // 0 = 0*10 + 5 = 5, 5 = 5*10 + 4 = 54 , 54 = 54*10 + 3 = 543
+        num = Math.floor(num / 10);  // 345 = 345/10 = 34, 34/10 = 3,
+      }
+
+      console.log("Reverse number : " + rev);
         
 
     </script>
